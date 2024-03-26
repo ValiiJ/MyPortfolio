@@ -48,35 +48,3 @@ List<ProjectUtils> hobbyProjectUtils = [
     iosLink: 'https://github.com/ValiiJ/dice_roller',
   ),
 ];
-
-List<ProjectUtils> workProjectUtils = [
-  ProjectUtils(
-    image: 'assets/projects/breakfastapp.png',
-    title: 'FoodsFit',
-    subtitle: 'Thit is test app',
-    androidLink: 'https://github.com/ValiiJ/foods_fit',
-    iosLink: 'https://github.com/ValiiJ/foods_fit',
-    webLink: 'https://github.com/ValiiJ/foods_fit',
-  ),
-  ProjectUtils(
-    image: 'assets/projects/diceroll.png',
-    title: 'Diceroll',
-    subtitle: 'Thit is test app',
-    androidLink: 'https://github.com/ValiiJ/foods_fit',
-    iosLink: 'https://github.com/ValiiJ/foods_fit',
-  ),
-  ProjectUtils(
-    image: 'assets/projects/streeapp.jpg',
-    title: 'StreeApp',
-    subtitle: 'Thit is test app',
-    androidLink: 'https://github.com/ValiiJ/foods_fit',
-    iosLink: 'https://github.com/ValiiJ/foods_fit',
-  ),
-  ProjectUtils(
-    image: 'assets/projects/todoapp.png',
-    title: 'ToDo',
-    subtitle: 'Thit is test app',
-    androidLink: 'https://github.com/ValiiJ/foods_fit',
-    iosLink: 'https://github.com/ValiiJ/foods_fit',
-  ),
-];

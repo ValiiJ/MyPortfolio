@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/constants/colors.dart';
 import 'package:my_portfolio/utils/projects_utils.dart';
-
-//fix later
-// import 'dart:js' as js;
+import 'dart:js' as js;
 
 class ProjectCardWidget extends StatelessWidget {
   const ProjectCardWidget({super.key, required this.project});
@@ -72,11 +70,10 @@ class ProjectCardWidget extends StatelessWidget {
                 if (project.androidLink != null)
                   InkWell(
                     onTap: () {
-                      //fix  later
-                      // js.context.callMethod(
-                      //   'open',
-                      //   [project.androidLink],
-                      // );
+                      js.context.callMethod(
+                        'open',
+                        [project.androidLink],
+                      );
                     },
                     child: Image.asset(
                       'assets/images/android_icon.png',
@@ -88,11 +85,10 @@ class ProjectCardWidget extends StatelessWidget {
                     padding: const EdgeInsets.only(left: 6),
                     child: InkWell(
                       onTap: () {
-                        //fix later
-                        // js.context.callMethod(
-                        //   'open',
-                        //   [project.iosLink],
-                        // );
+                        js.context.callMethod(
+                          'open',
+                          [project.iosLink],
+                        );
                       },
                       child: Image.asset(
                         'assets/images/apple_icon.png',
@@ -108,11 +104,10 @@ class ProjectCardWidget extends StatelessWidget {
                     ),
                     child: InkWell(
                       onTap: () {
-                        //fix later
-                        // js.context.callMethod(
-                        //   context,
-                        //   [project.webLink],
-                        // );
+                        js.context.callMethod(
+                          context,
+                          [project.webLink],
+                        );
                       },
                       child: Image.asset(
                         'assets/images/web_icon.png',

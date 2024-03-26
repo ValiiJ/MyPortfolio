@@ -15,36 +15,6 @@ class ProjectSectionWidget extends StatelessWidget {
       padding: const EdgeInsets.fromLTRB(25, 20, 25, 60),
       child: Column(
         children: [
-          //work project title
-          const Text(
-            'Work projects ',
-            style: TextStyle(
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
-              color: CustomColors.whitePrimary,
-            ),
-          ),
-
-          const SizedBox(
-            height: 50,
-          ),
-          //work project cards
-          ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 850),
-            child: Wrap(
-              spacing: 25,
-              runSpacing: 25,
-              children: [
-                for (int i = 0; i < workProjectUtils.length; i++)
-                  ProjectCardWidget(
-                    project: workProjectUtils[i],
-                  ),
-              ],
-            ),
-          ),
-          const SizedBox(
-            height: 80,
-          ),
           //hobby project title
           const Text(
             'Hobby projects ',

@@ -23,7 +23,7 @@ class MainMobileWidget extends StatelessWidget {
           ),
 
           const Text(
-            'Hi, Valmir Jollxhiu\nA Flutter Developer ',
+            'Hi, I\'m Valmir Jollxhiu\nA Flutter Developer ',
             style: TextStyle(
               fontSize: 24,
               height: 1.5,

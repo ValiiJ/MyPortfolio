@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/constants/colors.dart';
 import 'package:my_portfolio/constants/size.dart';
-
+import 'package:my_portfolio/constants/sns_links.dart';
+import 'dart:js' as js;
 import 'package:my_portfolio/widgets/custom_text_field_widget.dart';
 
 class ContackSectionWidget extends StatelessWidget {
@@ -88,12 +89,12 @@ class ContackSectionWidget extends StatelessWidget {
             children: [
               InkWell(
                 onTap: () {
-                  // js.context.callMethod(
-                  //   'open',
-                  //   [
-                  //     SnsLinks.linkedin,
-                  //   ],
-                  // );
+                  js.context.callMethod(
+                    'open',
+                    [
+                      SnsLinks.linkedin,
+                    ],
+                  );
                 },
                 child: Image.asset(
                   'assets/icons/linkedin.png',
@@ -103,35 +104,7 @@ class ContackSectionWidget extends StatelessWidget {
               InkWell(
                 onTap: () {},
                 child: Image.asset(
-                  'assets/icons/telegram2.png',
-                  width: 28,
-                ),
-              ),
-              InkWell(
-                onTap: () {
-                  // js.context.callMethod(
-                  //   'open',
-                  //   [
-                  //     SnsLinks.telegram,
-                  //   ],
-                  // );
-                },
-                child: Image.asset(
                   'assets/icons/github2.png',
-                  width: 28,
-                ),
-              ),
-              InkWell(
-                onTap: () {
-                  // js.context.callMethod(
-                  //   'open',
-                  //   [
-                  //     SnsLinks.x,
-                  //   ],
-                  // );
-                },
-                child: Image.asset(
-                  'assets/icons/x2.png',
                   width: 28,
                 ),
               ),

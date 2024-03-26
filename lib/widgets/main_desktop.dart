@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../constants/colors.dart';
@@ -24,7 +23,7 @@ class MainDesktopWidget extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const Text(
-                  'Hi, Valmir Jollxhiu\nA Flutter Developer ',
+                  'Hi, I\'m Valmir Jollxhiu\nA Flutter Developer ',
                   style: TextStyle(
                     fontSize: 30,
                     height: 1.5,
